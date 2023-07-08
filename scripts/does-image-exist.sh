@@ -54,4 +54,5 @@ echo "$output"
 if echo "$output" | grep -q "ERROR:"; then
   echo "It is possible the image does not exist"
   echo "Doublecheck the image name and tag, then confirm that the image was actually built and successfully pushed to GCR."
+  exit 1
 fi
